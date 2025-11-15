@@ -1,0 +1,133 @@
+/* =========================
+   VARIABLES DE MARCA MCD
+   ========================= */
+:root {
+  --mcd-yellow: #FFD005;
+  --mcd-blue:   #0775FF;
+  --mcd-red:    #A70C12;
+  --mcd-gray:   #F6F6F6;
+  --mcd-dark:   #161616;
+  --mcd-radius-lg: 999px;
+}
+
+/* =========================
+   TIPOGRAFÍA Y BODY
+   ========================= */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+/* Títulos principales (hero) */
+.mcd-heading-hero {
+  font-size: clamp(2.5rem, 3vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--mcd-dark);
+}
+
+/* Subtítulos */
+.mcd-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+/* =========================
+   BOTONES
+   ========================= */
+.mcd-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--mcd-radius-lg);
+  border: none;
+  background: linear-gradient(135deg, var(--mcd-yellow), var(--mcd-blue));
+  color: #111111;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mcd-btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.02);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+}
+
+.mcd-btn-primary:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+/* Versión outline para secundario */
+.mcd-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.7rem;
+  border-radius: var(--mcd-radius-lg);
+  border: 2px solid var(--mcd-blue);
+  background: transparent;
+  color: var(--mcd-blue);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.mcd-btn-outline:hover {
+  background: var(--mcd-blue);
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   SECCIONES
+   ========================= */
+
+/* Sección clara con fondo gris técnico */
+.mcd-section-light {
+  background-color: var(--mcd-gray);
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+}
+
+/* Sección oscura tipo “continudiad energética” */
+.mcd-section-dark {
+  background: radial-gradient(circle at top left, #222 0, #000 55%);
+  color: #f9f9f9;
+  padding: clamp(3.2rem, 6vw, 4.8rem) 0;
+}
+
+/* Caja de beneficio */
+.mcd-benefit-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.7rem 1.8rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+/* Badges de seguridad / continuidad */
+.mcd-badge-safe {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(7, 117, 255, 0.06);
+  color: var(--mcd-blue);
+}
