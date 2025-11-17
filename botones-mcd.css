@@ -38,6 +38,11 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+.boton-primario:focus-visible {
+  outline: 3px solid var(--color-azul-mcd);
+  outline-offset: 3px;
+}
+
 /* Botón secundario (outline) */
 .boton-secundario {
   display: inline-flex;
@@ -68,6 +73,11 @@
   transform: translateY(-1px);
 }
 
+.boton-secundario:focus-visible {
+  outline: 3px solid var(--color-azul-mcd);
+  outline-offset: 3px;
+}
+
 /* Botón texto (link con estilo de CTA) */
 .boton-texto {
   display: inline-flex;
@@ -87,5 +97,24 @@
 
 .boton-texto:hover {
   color: var(--color-rojo-mcd);
+}
+
+.boton-texto:focus-visible {
+  outline: 3px solid var(--color-azul-mcd);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boton-primario,
+  .boton-primario:hover,
+  .boton-primario:active,
+  .boton-secundario,
+  .boton-secundario:hover,
+  .boton-texto,
+  .boton-texto:hover {
+    transition: none;
+    transform: none;
+  }
 }
 
