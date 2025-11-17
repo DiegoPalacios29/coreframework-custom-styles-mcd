@@ -28,3 +28,5 @@ Custom Styles para Transformadores MCD usando Core Framework.
 - Verifica el contraste de colores al combinar fondos y textos para cumplir criterios de accesibilidad.
 - Usa las clases de botones con `:focus-visible` para asegurar navegación con teclado.
 - Si tu proyecto requiere menos movimiento, habilita `prefers-reduced-motion` en tu navegador para desactivar transiciones.
+- Aprovecha los estados `:disabled` o `aria-disabled="true"` en los botones para evitar interacciones involuntarias; los estilos ya incluyen cursores y opacidades acordes.
+- Conserva la tipografía heredada (`font-family` y `font-size`) de tu proyecto: los botones respetan esos valores para mantener consistencia visual.

@@ -20,6 +20,9 @@
   text-decoration: none;
   cursor: pointer;
 
+  font-family: inherit;
+  font-size: var(--texto-base, 1rem);
+  
   box-shadow: var(--sombra-suave);
   transition:
     transform 0.15s ease,
@@ -43,6 +46,14 @@
   outline-offset: 3px;
 }
 
+.boton-primario:disabled,
+.boton-primario[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.65;
+  box-shadow: none;
+  filter: grayscale(0.08);
+}
+
 /* Botón secundario (outline) */
 .boton-secundario {
   display: inline-flex;
@@ -61,6 +72,9 @@
   letter-spacing: 0.08em;
   cursor: pointer;
 
+  font-family: inherit;
+  font-size: var(--texto-base, 1rem);
+
   transition:
     background-color 0.15s ease,
     color 0.15s ease,
@@ -76,6 +90,16 @@
 .boton-secundario:focus-visible {
   outline: 3px solid var(--color-azul-mcd);
   outline-offset: 3px;
+}
+
+.boton-secundario:disabled,
+.boton-secundario[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+  background-color: rgba(7, 117, 255, 0.08);
+  color: var(--color-azul-mcd);
+  border-color: rgba(7, 117, 255, 0.4);
+  transform: none;
 }
 
 /* Botón texto (link con estilo de CTA) */
@@ -103,6 +127,13 @@
   outline: 3px solid var(--color-azul-mcd);
   outline-offset: 3px;
   border-radius: 0.25rem;
+}
+
+.boton-texto:disabled,
+.boton-texto[aria-disabled="true"] {
+  cursor: not-allowed;
+  color: var(--color-gris-medio, #9CA3AF);
+  text-decoration-color: currentColor;
 }
 
 @media (prefers-reduced-motion: reduce) {
