@@ -1,1 +1,102 @@
+/* =========================================================
+   SISTEMA DE VARIABLES RESPONSIVE – TRANSFORMADORES MCD
+   Breakpoints Bricks:
+   - Escritorio (>= 992px)
+   - Tablet (max-width: 991px)
+   - Móvil Horizontal (max-width: 767px)
+   - Móvil Vertical (max-width: 478px)
+   ========================================================= */
+
+/* ESCRITORIO (DESKTOP) – Base */
+:root {
+  /* Ancho de contenedor */
+  --contenedor-maximo: 1200px;
+  --contenedor-padding-x: 2.5rem;
+
+  /* Padding vertical de secciones */
+  --seccion-padding-y: 5rem;
+
+  /* Gaps generales */
+  --gap-xxl: 4rem;
+  --gap-xl: 2.5rem;
+  --gap-lg: 1.75rem;
+  --gap-md: 1.25rem;
+  --gap-sm: 0.75rem;
+
+  /* Tamaños de texto – Escritorio */
+  --texto-hero: 3.2rem;
+  --texto-h1: 2.4rem;
+  --texto-h2: 2rem;
+  --texto-h3: 1.6rem;
+  --texto-base: 1rem;
+  --texto-pequeno: 0.875rem;
+
+  /* Alturas de línea */
+  --linea-ajustada: 1.1;
+  --linea-normal: 1.5;
+  --linea-amplia: 1.7;
+}
+
+/* TABLET – max-width: 991px */
+@media (max-width: 991px) {
+  :root {
+    --contenedor-padding-x: 2rem;
+    --seccion-padding-y: 4rem;
+
+    --gap-xxl: 3rem;
+    --gap-xl: 2rem;
+    --gap-lg: 1.5rem;
+    --gap-md: 1rem;
+    --gap-sm: 0.7rem;
+
+    --texto-hero: 2.6rem;
+    --texto-h1: 2.1rem;
+    --texto-h2: 1.8rem;
+    --texto-h3: 1.4rem;
+    --texto-base: 0.98rem;
+    --texto-pequeno: 0.85rem;
+  }
+}
+
+/* MÓVIL HORIZONTAL – max-width: 767px */
+@media (max-width: 767px) {
+  :root {
+    --contenedor-padding-x: 1.5rem;
+    --seccion-padding-y: 3.5rem;
+
+    --gap-xxl: 2.5rem;
+    --gap-xl: 1.8rem;
+    --gap-lg: 1.25rem;
+    --gap-md: 0.9rem;
+    --gap-sm: 0.6rem;
+
+    --texto-hero: 2.2rem;
+    --texto-h1: 1.9rem;
+    --texto-h2: 1.6rem;
+    --texto-h3: 1.3rem;
+    --texto-base: 0.95rem;
+    --texto-pequeno: 0.82rem;
+  }
+}
+
+/* MÓVIL VERTICAL – max-width: 478px */
+@media (max-width: 478px) {
+  :root {
+    --contenedor-padding-x: 1.25rem;
+    --seccion-padding-y: 3rem;
+
+    --gap-xxl: 2rem;
+    --gap-xl: 1.5rem;
+    --gap-lg: 1.1rem;
+    --gap-md: 0.8rem;
+    --gap-sm: 0.55rem;
+
+    --texto-hero: 1.9rem;
+    --texto-h1: 1.7rem;
+    --texto-h2: 1.45rem;
+    --texto-h3: 1.2rem;
+    --texto-base: 0.92rem;
+    --texto-pequeno: 0.8rem;
+  }
+}
 
