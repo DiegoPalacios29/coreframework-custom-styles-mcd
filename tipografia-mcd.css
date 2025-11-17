@@ -1,1 +1,56 @@
+/* =========================================================
+   TIPOGRAFÍA MCD
+   ========================================================= */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--color-negro-mcd, #161616);
+  background-color: var(--color-blanco, #FFFFFF);
+}
+
+/* Títulos principales */
+.titulo-hero {
+  font-size: var(--texto-hero);
+  line-height: var(--linea-ajustada);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.titulo-h1 {
+  font-size: var(--texto-h1);
+  line-height: var(--linea-ajustada);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.titulo-h2 {
+  font-size: var(--texto-h2);
+  line-height: var(--linea-ajustada);
+  font-weight: 600;
+}
+
+.titulo-h3 {
+  font-size: var(--texto-h3);
+  line-height: var(--linea-normal);
+  font-weight: 600;
+}
+
+/* Texto base */
+.texto-base {
+  font-size: var(--texto-base);
+  line-height: var(--linea-normal);
+}
+
+.texto-pequeno {
+  font-size: var(--texto-pequeno);
+  line-height: var(--linea-normal);
+}
+
+/* Pequeño destacado (ej: sobre títulos) */
+.etiqueta-pequena {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
 
