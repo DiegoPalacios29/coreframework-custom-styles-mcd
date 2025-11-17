@@ -10,7 +10,7 @@
 /* ESCRITORIO (DESKTOP) – Base */
 :root {
   /* Ancho de contenedor */
-  --contenedor-maximo: 1200px;
+  --contenedor-maximo: 1100px;
   --contenedor-padding-x: 2.5rem;
 
   /* Padding vertical de secciones */
