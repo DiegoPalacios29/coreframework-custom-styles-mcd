@@ -1,1 +1,87 @@
+/* =========================================================
+   COLORES OFICIALES TRANSFORMADORES MCD
+   ========================================================= */
+
+:root {
+  /* Paleta principal */
+  --color-amarillo-mcd: #FFD005;
+  --color-azul-mcd: #0775FF;
+  --color-rojo-mcd: #A70C12;
+
+  /* Neutros */
+  --color-gris-claro: #F6F6F6;
+  --color-gris-medio: #9CA3AF;
+  --color-negro-mcd: #161616;
+  --color-blanco: #FFFFFF;
+
+  /* Estados */
+  --color-exito: #16A34A;
+  --color-alerta: #F97316;
+  --color-error: #DC2626;
+
+  /* Bordes y sombras */
+  --borde-suave: 1px solid rgba(15, 23, 42, 0.06);
+  --sombra-suave: 0 18px 40px rgba(0, 0, 0, 0.06);
+  --sombra-fuerte: 0 25px 50px rgba(0, 0, 0, 0.18);
+}
+
+/* Fondos */
+.fondo-primario {
+  background-color: var(--color-azul-mcd);
+}
+
+.fondo-secundario {
+  background-color: var(--color-amarillo-mcd);
+}
+
+.fondo-oscuro {
+  background-color: var(--color-negro-mcd);
+  color: var(--color-blanco);
+}
+
+.fondo-gris {
+  background-color: var(--color-gris-claro);
+}
+
+/* Texto */
+.texto-primario {
+  color: var(--color-azul-mcd);
+}
+
+.texto-secundario {
+  color: var(--color-amarillo-mcd);
+}
+
+.texto-oscuro {
+  color: var(--color-negro-mcd);
+}
+
+.texto-suave {
+  color: var(--color-gris-medio);
+}
+
+/* Bordes */
+.borde-primario {
+  border: 1px solid var(--color-azul-mcd);
+}
+
+.borde-suave {
+  border: var(--borde-suave);
+}
+
+/* Estados (ej: badges, mensajes) */
+.estado-exito {
+  background-color: rgba(22, 163, 74, 0.06);
+  color: var(--color-exito);
+}
+
+.estado-alerta {
+  background-color: rgba(249, 115, 22, 0.1);
+  color: var(--color-alerta);
+}
+
+.estado-error {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: var(--color-error);
+}
 
