@@ -1,1 +1,62 @@
+/* =========================================================
+   SECCIONES Y BLOQUES MCD
+   ========================================================= */
+
+/* Contenedor centrado reutilizable */
+.contenedor {
+  max-width: var(--contenedor-maximo);
+  margin-inline: auto;
+  padding-inline: var(--contenedor-padding-x);
+}
+
+/* Sección genérica */
+.seccion {
+  padding-block: var(--seccion-padding-y);
+}
+
+/* Sección clara para contenido informativo */
+.seccion-clara {
+  padding-block: var(--seccion-padding-y);
+  background-color: var(--color-gris-claro);
+}
+
+/* Sección oscura para llamadas de acción / continuidad energética */
+.seccion-oscura {
+  padding-block: var(--seccion-padding-y);
+  background: radial-gradient(circle at top left, #222 0, #000 55%);
+  color: var(--color-blanco);
+}
+
+/* Tarjeta de beneficio / servicio */
+.tarjeta-beneficio {
+  background-color: var(--color-blanco);
+  border-radius: 1.25rem;
+  padding: 1.7rem 1.8rem;
+  border: var(--borde-suave);
+  box-shadow: var(--sombra-suave);
+}
+
+/* Badge de confianza (ej: "SEC", "24/7", "Continuidad energética") */
+.badge-confianza {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+
+  background-color: rgba(7, 117, 255, 0.08);
+  color: var(--color-azul-mcd);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Fila de badges */
+.fila-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
 
